@@ -1,0 +1,11 @@
+EDB_DECL:
+arc(x int, y int)
+
+IDB_DECL:
+ccm(x int, y int)
+cc(x int, y int)
+
+RULE_DECL:
+ccm(x, MIN(x)) :- arc(x, _).
+ccm(y, MIN(z)) :- ccm(x,z), arc(x,y).
+cc(x, MIN(y)) :- ccm(x,y). 

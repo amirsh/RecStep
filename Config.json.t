@@ -21,7 +21,7 @@
         },
         "Optimization": {
                 "analyzer_level": "minimum",
-                "dynamic_set_diff": false,
+                "dynamic_set_diff": true,
                 "default_set_diff_alg": 2
         },
         "Parameters": {
