@@ -1,9 +1,9 @@
 {
-        "QuickStep_Shell_Dir": "/fastdisk/quickstep-datalog/build",
+        "QuickStep_Shell_Dir": "/home/ubuntu/quickstep-datalog/build",
         "Input_Dir": "./Input",
         "Logging": {
                 "logging_directory": "./log",
-                "log": true,
+                "log": false,
                 "logging_level": {
                         "stdout": true,
                         "info_log": true
@@ -41,14 +41,14 @@
         "Optimization": {
                 "analyzer_level": "minimum",
 		"analyze_all_tables": false,
-                "dynamic_set_diff": true,
+                "dynamic_set_diff": false,
                 "default_set_diff_alg": 2,
 		"selective_dedup": false,
 		"dedup_relation_list": [],
                 "unified_idb_evaluation": true
         },
         "Parameters": {
-                "threads_num": 40,
+                "threads_num": 1,
                 "block_size": 262144
         }
 }
