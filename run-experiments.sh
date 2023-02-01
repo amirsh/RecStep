@@ -1,6 +1,9 @@
-Datasets="wiki"
-# Datasets="wiki epinions twitter"
-Programs="reach"
+#Datasets="wiki"
+Datasets="vec"
+#Datasets="wiki epinions twitter"
+#Programs="reach"
+#Programs="cc"
+Programs="presum_stratified"
 # Programs="cc reach sssp"
 
 function qry ()
@@ -26,11 +29,11 @@ do
 	qry $P
 	for D in $Datasets
 	do
-		cp ./Input/$D$Sfx.csv ./Input/arc.csv
+		cp ../datasets/$D/$D$Sfx.csv ./Input/arc.csv
 		echo " BENCHMARKING $P on $D" ;
-		cp Config.json.t Config.json
-		Opt=""
-		runrs $P
+		#cp Config.json.t Config.json
+		#Opt=""
+		#runrs $P
 		cp Config.json.f Config.json
 		Opt="-opt"
 		runrs $P

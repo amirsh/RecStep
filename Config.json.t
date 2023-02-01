@@ -1,5 +1,5 @@
 {
-        "QuickStep_Shell_Dir": "/usr/recstep/quickstep-datalog/build",
+        "QuickStep_Shell_Dir": "/home/ubuntu/quickstep-datalog/build",
         "Input_Dir": "./Input",
         "Logging": {
                 "logging_directory": "./log",
@@ -25,7 +25,7 @@
                 "default_set_diff_alg": 2
         },
         "Parameters": {
-                "threads_num": 100,
+                "threads_num": 1,
                 "block_size": 262144
         }
 }
